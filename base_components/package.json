@@ -1,9 +1,12 @@
 {
   "name": "base_components",
+  "description": "Common component used in website",
+  "homepage": "https://github.com/owner/project#readme",
   "version": "0.0.1",
   "type": "module",
   "exports": {
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./astro": "./baseComponents.ts"
   },
   "files": [
     "src",
@@ -12,7 +15,9 @@
   "keywords": [
     "astro-component"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "astro build"
+  },
   "devDependencies": {
     "astro": "^5.6.1"
   },
